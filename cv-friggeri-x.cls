@@ -165,11 +165,12 @@
 % List environment %
 %%%%%%%%%%%%%%%%%%%%
 
+\usepackage{longtable}
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \begin{longtable}{@{\extracolsep{\fill}}ll}
 }{%
-  \end{tabular*}
+  \end{longtable}
 }
 
 % Set a4paper and US letter size as explained here:
