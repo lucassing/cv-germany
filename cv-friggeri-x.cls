@@ -179,19 +179,30 @@
 \ifafourpaper
   \newcommand{\entry}[4]{%
   \parbox[t]{2cm}{\hfill#1}&\parbox[t]{11.1cm}{%
-  \textbf{#2}%
+  \textbf{#2}\\%
   \hfill%
-  {, \normalsize\addfontfeature{Color=lightgray} \textit{#3}}\\%
+  {\vspace{0.5em}}%
+  {\small\addfontfeature{Color=lightgray}\textit{#3}}\\%
   #4\vspace{\parsep}%
-  }\\}
+  }\\\\}
+  \newcommand{\entryexperience}[5]{%
+  \parbox[t]{2cm}{\hfill\small#1}&\parbox[t]{11.1cm}{%
+  \textbf{#2}\\%
+  \hfill%
+  {\vspace{0.5em}}%
+  {\small\addfontfeature{Color=lightgray}\textit{#3}}\\%
+  #4\vspace{\parsep}\\%
+  \small{\textit{\textbf{Skills:}} #5}%
+  }\\\\}
 \else
   \newcommand{\entry}[4]{%
     \parbox[t]{2cm}{\hfill#1}&\parbox[t]{11.6cm}{%
-    \textbf{#2}%
+    \textbf{#2}\\%
     \hfill%
-    {, \normalsize\addfontfeature{Color=lightgray} \textit{#3}}\\%
+    {\vspace{0.5em}}%
+    {\small\addfontfeature{Color=lightgray}\textit{#3}}\\%
     #4\vspace{\parsep}%
-    }\\}
+    }\\\\}
 \fi
 
 %%%%%%%%%%%%%%
@@ -206,15 +217,24 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.6}(1.5, 4.33)
+  \begin{textblock}{3.6}(1, 4.33)
   \begin{flushright}
   \obeycr
+  \small
 }{%
   \restorecr
   \end{flushright}
   \end{textblock}
   \let\section\oldsection
 }
+
+%%%%%%%%%%%%%%%%
+% Qualification dots %
+%%%%%%%%%%%%%%%%
+
+\RequirePackage{amssymb} % For \blacksquare
+\newcommand{\filleddot}{\ensuremath{\blacksquare}}
+\newcommand{\emptydot}{\ensuremath{\square}}
 
 %%%%%%%%%%%%%%%%
 % Bibliography %
