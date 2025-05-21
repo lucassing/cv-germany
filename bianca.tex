@@ -1,0 +1,191 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% cv-friggeri-x 1.0 (01/01/2016)
+% XeLaTeX Template
+%
+% Based on:
+% Friggeri Resume/CV
+% Version 1.2 (3/5/15)
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+% 
+% Modified by:
+% Nadorrano
+% https://github.com/Nadorrano/cv-friggeri-x
+%
+% License:
+% MIT
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography,
+% if used, needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,nocolors]{cv-friggeri-x}
+% Add `a4paper` to set a4 paper size
+% Add `nocolors` to remove colors from the document
+% Add `lightheader` to change the dark background of the header to white
+
+\usepackage{marvosym} % needed to print glyphs for email, cell phone etc.
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+\begin{document}
+
+\header{Bianca Eugenia }{Sozzi}{Android Software Engineer} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+\pin \hfill Kahlweg 9
+35398 Gießen-Allendorf
+Germany
+~
+{\Large\textcolor{gray}{\Mobilefone}} \hfill +49 (177) 543 1281
+\hfill \href{mailto:biancasozzi@gmail.com}{\footnotesize biancasozzi@gmail.com}
+~
+\llogo \hfill \href{https://www.linkedin.com/in/bianca-eugenia-sozzi}{bianca-eugenia-sozzi}
+~
+\section{languages}
+\begin{description}
+  \item[Spanish] \hfill Native speaker
+  \item[English] \hfill Professional
+  \item[German] \hfill Intermediate (B2)
+\end{description}
+\section{skills}
+\begin{description} 
+  \item[Agile] \hfill \filleddot \filleddot \filleddot \filleddot \filleddot
+  \item[Leadership] \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
+  \item[Android] \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
+  \item[Kotlin] \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
+  \item[Java] \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
+  \item[JetpackCompose] \hfill \filleddot \filleddot \emptydot \emptydot \emptydot
+  \item[AWS] \hfill \filleddot \filleddot \emptydot \emptydot \emptydot
+  \item[Python] \hfill \filleddot \filleddot \emptydot \emptydot \emptydot
+\end{description}
+\end{aside}
+%----------------------------------------------------------------------------------------
+%	SUMMARY SECTION
+%----------------------------------------------------------------------------------------
+
+\section{summary}
+Over 6 years of total experience, including Android development with
+Kotlin and Java since January 2022. I have worked on building
+Android applications using MVVM, Clean Architecture, and Jetpack
+Compose. Previously, I worked as a backend engineer using Python
+and Java, gaining a strong foundation in scalable systems and API
+development.
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2014--2018}
+{Engineer’s Degree {\normalfont Systems Engineering}}
+{Universidad Tecnológica Nacional, Argentina}
+{Graduated with a focus on Object Oriented Programming (OOP) and project management.}
+
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\subsection{Full Time}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entryexperience
+{Sep 2024}
+{Mar 2025}
+{Geopagos - Android Software Engineer}
+{Argentina · Remote}
+{
+• Developed an app utilizing the product's SDK for regression tests.\\
+• Contributed to the development of team-owned SDKs at Geopagos.
+}
+{
+  Kotlin · Kotlin Coroutines · Model-view-viewmodel (MVVM) · MVI · SOLID Design Principles · Clean Architecture · Koin · Retrofit
+}
+
+%------------------------------------------------
+
+\entryexperience
+{Jan 2022}
+{May 2024}
+{Eyeo - Android Software Engineer}
+{Germany · Remote}
+{
+• Played a key role in the further development of Samsung Content Blockers, enhancing browsing experiences forusers on the PlayStore.
+\\
+• Led development efforts and made significant contributions to the
+development of Adblock Browser, elevatingadvertisement filtering capabilities and privacy features for Android users.
+\\
+• Mentorship for Junior Android Dev working in the team.
+}
+{
+  Architectural Patterns · Kotlin · Java · Jetpack compose · Kotlin Coroutines · Model-view-viewmodel (MVVM) · Hilt
+}
+
+%------------------------------------------------
+
+\entryexperience
+{Nov 2019}
+{Dec 2021}
+{Klarna - Java Software Engineer}
+{Giessen, Hesse, Germany · Hybrid}
+{
+  • Provided personalized mentorship and guidance to colleagues who were new to Python, helping them graspfundamental concepts and navigate their initial coding projects with confidence
+  \\
+  • Integrated one of our risk services into AWS
+  \\
+  • Further developed the backend application using Java/Spring
+}
+{ 
+  Architectural Patterns · Spring Boot  · Java · Python · Amazon Web Services (AWS) · Performance Testing · Sentry · Datadog
+}
+
+%------------------------------------------------
+
+\entryexperience
+{Aug 2018}
+{Aug 2019}
+{Eventbrite - Software Engineer}
+{Provincia de Mendoza, Argentina}
+{
+  In my role as a Junior Software Engineer at Eventbrite, I gained valuable experience in python/django API development, SQL Databases, and working in an agile environment. I contributed to enhancing user experience and functionality through the development of APIs and optimized data storage processes. Additionally, I collaborated with cross-functional teams to ensure timely project delivery.
+}
+{
+  Architectural Patterns · Python · Django · Unit Testing · Agile Methodologies · SQL
+}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{interests}
+
+\textbf{professional:} Android development, Clean Architecture, Kotlin Multiplatform, Jetpack Compose, modular app design, RESTful API integration, dependency injection, scalable architecture, backend development (Java/Kotlin), testing and automation, SDK integration \\
+\textbf{personal:} traveling, remote work, problem-solving, exploring new cultures, parenting (BLW), TV Series, Music, Reading
+ 
+\end{document}

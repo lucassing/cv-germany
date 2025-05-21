@@ -186,14 +186,14 @@
   {\small\addfontfeature{Color=lightgray}\textit{#3}}\\%
   #4\vspace{\parsep}%
   }\\\\}
-  \newcommand{\entryexperience}[5]{%
-  \parbox[t]{2cm}{\hfill\small#1}&\parbox[t]{11.1cm}{%
-  \textbf{#2}\\%
+  \newcommand{\entryexperience}[6]{%
+  \parbox[t]{2cm}{\small#1 -\\#2}&\parbox[t]{11.1cm}{%
+  \textbf{#3}\\%
   \hfill%
   {\vspace{0.5em}}%
-  {\small\addfontfeature{Color=lightgray}\textit{#3}}\\%
-  #4\vspace{\parsep}\\%
-  \small{\textit{\textbf{Skills:}} #5}%
+  {\small\addfontfeature{Color=lightgray}\textit{#4}}\\%
+  #5\vspace{\parsep}\\%
+  \small{\textit{\textbf{Skills:}} #6}%
   }\\\\}
 \else
   \newcommand{\entry}[4]{%
