@@ -23,12 +23,13 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[a4paper,nocolors]{cv-friggeri-x}
+\documentclass[a4paper,nocolors]{friggeri-cv}
 % Add `a4paper` to set a4 paper size
 % Add `nocolors` to remove colors from the document
 % Add `lightheader` to change the dark background of the header to white
 
 \usepackage{marvosym} % needed to print glyphs for email, cell phone etc.
+\usepackage{graphicx}  
 \addbibresource{bibliography.bib} % Specify the bibliography file to include publications
 \begin{document}
 
@@ -42,31 +43,79 @@
 \section{contact}
 \pin \hfill Kahlweg 9
 35398 Gießen-Allendorf
-Germany
-~
+Germany\vspace{0.5em}
 {\Large\textcolor{gray}{\Mobilefone}} \hfill +49 (177) 7527 030
-\hfill \href{mailto:singlucasmartin@gmail.com}{\footnotesize singlucasmartin@gmail.com}
-~
+\hfill \href{mailto:singlucasmartin@gmail.com}{\scalebox{0.9}[1]{singlucasmartin@gmail.com}}\vspace{0.75em}
 \llogo \hfill \href{https://www.linkedin.com/in/lucassinggg}{in://lucassinggg}
-~
 \section{languages}
-\begin{description}
-  \item[Spanish] \hfill Native speaker
-  \item[English] \hfill Professional
-  \item[German] \hfill Intermediate (B1)
-\end{description}
+\textbf{Spanish} \hfill Native speaker~
+\textbf{English} \hfill Professional~
+\textbf{German} \hfill Intermediate (B1)~
 \section{stack}
-\begin{description} 
-  \item[Python] \hfill \filleddot \filleddot \filleddot \filleddot \emptydot
-  \item[Node.Js] \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
-  \item[Django] \hfill \filleddot \filleddot \filleddot \filleddot \filleddot 
-  \item[React.Js] \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
-  \item[AWS] \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
-  \item[GCloud] \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
-  \item[Docker] \hfill \filleddot \filleddot \filleddot \filleddot \emptydot
-  \item[Terraform] \hfill \filleddot \emptydot \emptydot \emptydot \emptydot
-\end{description}
+\textbf{Python} \hfill \filleddot \filleddot \filleddot \filleddot \emptydot
+\textbf{Node.Js} \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
+\textbf{Django} \hfill \filleddot \filleddot \filleddot \filleddot \filleddot
+\textbf{React.Js} \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
+\textbf{AWS} \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
+\textbf{GCloud} \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
+\textbf{Docker} \hfill \filleddot \filleddot \filleddot \filleddot \emptydot
+\textbf{Terraform} \hfill \filleddot \emptydot \emptydot \emptydot \emptydot
 \end{aside}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{experience}
+
+\subsection{Full Time}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entryexperience
+{Aug 2024}
+{Mar 2025}
+{Globant - Gannett USA Today Network }
+{Germany · Remote}
+{- Developed and maintained APIs powering 20+ live products.\\
+- Implemented monitoring and deployment pipelines with GitHub Actions and Grafana.\\
+- Optimized database performance and API responsiveness.
+}
+
+%------------------------------------------------
+
+\entryexperience
+{Sep 2022}
+{May 2024}
+{Prezi (Payments and Porter)}
+{Germany · Remote}
+{- Built robust payment integrations (Zuora, Avalara) and automated tests.\\
+- Integrated Zoom SDK for real-time collaboration.}
+{Django, React.js, AWS, PostgreSQL, GitHub Actions, Zoom SDK}
+
+%------------------------------------------------
+
+\entryexperience
+{Jan 2022}
+{Jun 2022}
+{ValueWorks - Fullstack Developer}
+{Germany · Remote}
+{- Developed an AI-driven executive management platform.\\
+- Enhanced database and caching layers for performance.}
+{Vue.js, Django REST, PostgreSQL, Redis, Azure}
+%------------------------------------------------
+
+\entryexperience
+{Nov 2019}
+{Dec 2021}
+{Justus Liebig Universitat - Fullstack Python-js Developer}
+{Gießen, Hesse, Germany · Hybrid}
+{- Developed software and firmware for chromatography instrument.\\
+- Led team of students and junior developers.}
+{Django, JavaScript, SQLite, C++, OpenCV, Docker}
+
+\end{entrylist}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -96,65 +145,6 @@ Germany
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\section{experience}
-
-\subsection{Full Time}
-
-\begin{entrylist}
-
-%------------------------------------------------
-
-\entryexperience
-{Aug 2024}
-{Mar 2025}
-{Globant - Gannett USA Today Network }
-{Germany · Remote}
-{As part of the Gannett User Platform team for Gannett USA Today Network, I am responsible for developing and maintaining backend services and APIs that power personalized user experiences across more than 20 active and maintained projects. Our tech stack includes Python, Django, DRF, PostgreSQL, and tools like GitHub Actions and Grafana for monitoring, deployment, and continuous integration.}
-{Python (Programming Language) · Django · Gcloud · Terraform · Github Actions · Django REST Framework · pytest · Node.js · PostgreSQL · Grafana}
-
-%------------------------------------------------
-
-\entryexperience
-{Feb 2023}
-{May 2024}
-{Prezi - Payments }
-{Germany · Remote}
-{Designed and built payments platform features with Django and React. Integrated payment gateways and third-party APIs (Zuora, Avalara, Allpago) for secure transactions. Developed Grafana dashboards for monitoring. Automated regression testing using Selenium. Diagnosed payment processing issues and improved codebase performance.}
-{Django · React.js · Amazon Web Services (AWS) · PostgreSQL · GitHub Actions · Jenkins · Selenium · Grafana · Sentry · Payment and tax APIs (Zuora, Avalara, Allpago, etc.)}
-%------------------------------------------------
-
-\entryexperience
-{Sep 2022}
-{Feb 2023}
-{Prezi - Porter}
-{Germany · Remote}
-{As one of three developers behind Porter by Prezi, a Zoom-integrated tool designed to enhance meeting facilitation and participation, I contributed to making team sessions more productive, collaborative, and engaging. I was responsible for designing, developing, and maintaining features within a small development team. Additionally, I integrated the Zoom App SDK to enhance real-time collaboration and meeting facilitation. Working closely with the team, I helped refine the user experience and improve functionality based on user feedback.}
-{Heroku, Firebase, Express.js, TypeScript, React.js, Zoom App SDK}
-%------------------------------------------------
-
-\entryexperience
-{Jan 2022}
-{Jun 2022}
-{ValueWorks - Fullstack Developer}
-{Germany · Remote}
-{As part of the development team, I contributed to building a cutting-edge executive management system that leveraged AI to enhance decision-making, planning, reporting, and execution. My work spanned both frontend and backend development, including end-to-end feature implementation and third-party system integrations. The team designed, developed, and maintained the platform using Vue.js and Django REST, ensuring a seamless user experience. We implemented and optimized database solutions with PostgreSQL for efficient data storage and retrieval while leveraging Redis for caching and performance enhancements. Additionally, we integrated third-party systems and services using Azure and collaborated closely to build and refine end-to-end product features.}
-{Vue.js, Django REST Framework, PostgreSQL, Redis, Microsoft Azure}
-%------------------------------------------------
-
-\entryexperience
-{Nov 2019}
-{Dec 2021}
-{Justus Liebig Universitat - Fullstack Python-js Developer}
-{Gießen, Hesse, Germany · Hybrid}
-{As part of the development team, I contributed to building an HPTLC Chromatography Instrument from scratch with a full-stack approach. The team designed and implemented backend, frontend, and firmware components while also overseeing a group of students and mentoring junior developers. We developed the backend using Python (Django) and SQLite, while the frontend was built with JavaScript and jQuery to create an intuitive user interface. The firmware, written in C/C++, ensured seamless hardware-software integration. Additionally, we integrated OpenCV for advanced image processing tasks. Throughout the project, we supervised and mentored five bachelor’s and master’s students and trained two additional developers for future development and maintenance.}
-{SQLite, Django REST Framework, jQuery, C++, OpenCV, GitHub Actions, Docker}
-
-\end{entrylist}
-
-%----------------------------------------------------------------------------------------
 %	AWARDS SECTION
 %----------------------------------------------------------------------------------------
 
@@ -167,7 +157,7 @@ Germany
 \entry
 {2012–2017}
 {YPF Foundation Scholarship}
-{Awarded for academic excellence throughout undergraduate studies.}
+{Awarded for academic excellence.}
 
 \end{entrylist}
 
@@ -177,8 +167,8 @@ Germany
 
 \section{interests}
 
-\textbf{professional:} open-source development, backend architecture, API design, DevOps automation, software scalability, cloud computing, cryptocurrency, blockchain \\
-\textbf{personal:} parenting (BLW), gaming, problem-solving, cryptocurrency trading, Linux customization  
+\textbf{Professional:} Backend architecture, open-source, API design, cloud computing\\
+\textbf{Personal:} Parenting (BLW), gaming, cryptocurrency trading, Linux
 
 
 \end{document}

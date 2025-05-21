@@ -75,7 +75,9 @@
 %%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage{amssymb}  % Load this first
+\RequirePackage[math-style=TeX]{unicode-math}
+
 
 \newfontfamily\bodyfont[]{Roboto}
 \newfontfamily\thinfont[]{Roboto Thin}
@@ -110,8 +112,7 @@
       \thinfont #3%
     };
   \end{tikzpicture}
-  \vspace{2.5cm}
-  \vspace{-2\parskip}
+  \par\vspace*{2.3cm}
 }
 
 
@@ -216,7 +217,7 @@
 \newenvironment{aside}{%
   \let\oldsection\section
   \renewcommand{\section}[1]{
-    \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
+    \par\vspace{1.2\baselineskip}{\Large\headingfont\color{headercolor} ##1}\vspace{0.5\baselineskip}
   }
   \begin{textblock}{3.6}(1, 4.33)
   \begin{flushright}
@@ -233,7 +234,6 @@
 % Qualification dots %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage{amssymb} % For \blacksquare
 \newcommand{\filleddot}{\ensuremath{\blacksquare}}
 \newcommand{\emptydot}{\ensuremath{\square}}
 
@@ -242,11 +242,12 @@
 %%%%%%%%%%%%%%%%
 \RequirePackage[backend=biber, style=verbose, maxnames=99, sorting=ydnt]{biblatex}
 
-\DeclareFieldFormat[article]{title}{\href{\thefield{url}}{#1}}
-\DeclareFieldFormat[inproceedings]{title}{\href{\thefield{url}}{#1}}
-\DeclareFieldFormat[book]{title}{\href{\thefield{url}}{#1}}
-\DeclareFieldFormat[misc]{title}{\href{\thefield{url}}{#1}}
-\DeclareFieldFormat[report]{title}{\href{\thefield{url}}{#1}}
+\DeclareFieldFormat[article]{title}{\href{\thefield{url}}{##1}}
+\DeclareFieldFormat[inproceedings]{title}{\href{\thefield{url}}{##1}}
+\DeclareFieldFormat[book]{title}{\href{\thefield{url}}{##1}}
+\DeclareFieldFormat[misc]{title}{\href{\thefield{url}}{##1}}
+\DeclareFieldFormat[report]{title}{\href{\thefield{url}}{##1}}
+
 
 \DeclareBibliographyDriver{article}{%
   \printfield{title}%
@@ -347,7 +348,7 @@
 
 \DeclareNameFormat{author}{%
   \small\addfontfeature{Color=lightgray}%
-  \ifblank{#3}{}{#3\space}#1%
+  \ifblank{##3}{}{##3\space}##1%
   \ifthenelse{\value{listcount}<\value{liststop}}
     {\addcomma\space}
     {}%
@@ -365,11 +366,15 @@
   \end{refsection}
 }
 
-\DeclareSortingScheme{chronological}{
-  \sort[direction=descending]{\field{year}}
-  \sort[direction=descending]{\field{month}}
+\DeclareSortingTemplate{chronological}{
+  \sort{
+    \field{sortyear}
+    \field{year}
+  }
+  \sort{
+    \field{month}
+  }
 }
-
 
 
 %%%%%%%%%%%%%%%%
