@@ -8,7 +8,7 @@ lucas:
 	biber --input-directory=lucas lucas && \
 	xelatex -interaction=nonstopmode -output-directory=lucas lucas.tex && \
 	xelatex -interaction=nonstopmode -output-directory=lucas lucas.tex && \
-	mv lucas/lucas.pdf "lucas/Lucas Martin Sing CV.pdf"
+	mv lucas/lucas.pdf "lucas/Lucas Martin Sing Resume.pdf"
 
 bianca:
 	mkdir -p bianca && \

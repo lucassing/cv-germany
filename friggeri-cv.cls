@@ -139,18 +139,14 @@
 }
 
 \renewcommand{\section}[1]{
-  \par\vspace{\parskip}
   {%
     \LARGE\headingfont\color{headercolor}%
     \@sectioncolor #1%
   }
-  \par\vspace{\parskip}
 }
 
 \renewcommand{\subsection}[1]{
-  \par\vspace{.5\parskip}%
   {\Large\headingfont\color{headercolor} #1}
-  \par\vspace{.25\parskip}%
 }
 
 \renewcommand{\subsubsection}[2]{
@@ -186,16 +182,17 @@
   {\vspace{0.5em}}%
   {\small\addfontfeature{Color=lightgray}\textit{#3}}\\%
   #4\vspace{\parsep}%
-  }\\\\}
+  }\\\\[-0.5em]}
   \newcommand{\entryexperience}[6]{%
   \parbox[t]{2cm}{\small#1 -\\#2}&\parbox[t]{11.1cm}{%
-  \textbf{#3}\\%
-  \hfill%
-  {\vspace{0.5em}}%
-  {\small\addfontfeature{Color=lightgray}\textit{#4}}\\%
-  #5\vspace{\parsep}\\%
-  \small{\textit{\textbf{Skills:}} #6}%
-  }\\\\}
+    \textbf{#3}\\%
+    \hfill%
+    {\vspace{0.5em}}%
+    {\small\addfontfeature{Color=lightgray}\textit{#4}}\\%
+    #5\vspace{\parsep}\\%
+    \small{\textit{\textbf{Skills:}} #6}%
+  }\\\\[0.25em]
+}
 \else
   \newcommand{\entry}[4]{%
     \parbox[t]{2cm}{\hfill#1}&\parbox[t]{11.6cm}{%
@@ -204,7 +201,7 @@
     {\vspace{0.5em}}%
     {\small\addfontfeature{Color=lightgray}\textit{#3}}\\%
     #4\vspace{\parsep}%
-    }\\\\}
+    }\\\\[-0.5em]}
 \fi
 
 %%%%%%%%%%%%%%
@@ -219,7 +216,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{1.2\baselineskip}{\Large\headingfont\color{headercolor} ##1}\vspace{0.5\baselineskip}
   }
-  \begin{textblock}{3.6}(1, 4.33)
+  \begin{textblock}{3.6}(1, 4.35)
   \begin{flushright}
   \obeycr
   \small
