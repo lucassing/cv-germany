@@ -13,8 +13,8 @@ lucas:
 bianca:
 	mkdir -p bianca && \
 	xelatex -interaction=nonstopmode -output-directory=bianca bianca.tex && \
-	biber cv.bcf && \
+	ln -sf ../bibliography.bib bianca/bibliography.bib && \
+	biber --input-directory=bianca bianca && \
 	xelatex -interaction=nonstopmode -output-directory=bianca bianca.tex && \
 	xelatex -interaction=nonstopmode -output-directory=bianca bianca.tex && \
-	mv bianca/bianca.pdf "bianca/Bianca Eugenia Sozzi CV.pdf"
-	mv bianca.pdf "Bianca Eugenia Sozzi CV.pdf"
+	mv bianca/bianca.pdf "bianca/Bianca Eugenia Sozzi Resume.pdf"

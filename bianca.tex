@@ -22,13 +22,14 @@
 % if used, needs to be compiled with biber rather than bibtex.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\documentclass[a4paper,nocolors]{cv-friggeri-x}
+\documentclass[a4paper,nocolors]{friggeri-cv}
 % Add `a4paper` to set a4 paper size
 % Add `nocolors` to remove colors from the document
 % Add `lightheader` to change the dark background of the header to white
 
 \usepackage{marvosym} % needed to print glyphs for email, cell phone etc.
+\usepackage{graphicx}
+\usepackage{hyperref}
 \addbibresource{bibliography.bib} % Specify the bibliography file to include publications
 \begin{document}
 
@@ -40,64 +41,38 @@
 
 \begin{aside} % In the aside, each new line forces a line break
 \section{contact}
-\pin \hfill Kahlweg 9
-35398 Gießen-Allendorf
-Germany
-~
+\pin \hfill Anna-Mettbach-Str. 19
+35394 Gießen
+Germany\vspace{0.5em}
 {\Large\textcolor{gray}{\Mobilefone}} \hfill +49 (177) 543 1281
-\hfill \href{mailto:biancasozzi@gmail.com}{\footnotesize biancasozzi@gmail.com}
-~
-\llogo \hfill \href{https://www.linkedin.com/in/bianca-eugenia-sozzi}{bianca-eugenia-sozzi}
+\hfill \href{mailto:biancasozzi@gmail.com}{\scalebox{0.9}[1]{biancasozzi@gmail.com}}\vspace{0.75em}
+\llogo \hfill \href{https://www.linkedin.com/in/bianca-eugenia-sozzi}{bianca-eugenia-sozzi}\vspace{2em}
 ~
 \section{languages}
-\begin{description}
-  \item[Spanish] \hfill Native speaker
-  \item[English] \hfill Professional
-  \item[German] \hfill Intermediate (B2)
-\end{description}
+\textbf{English} \hfill Professional~
+\textbf{Spanish} \hfill Native speaker~
+\textbf{German} \hfill Intermediate (B1)~\vspace{2em}
 \section{skills}
-\begin{description} 
-  \item[Agile] \hfill \filleddot \filleddot \filleddot \filleddot \filleddot
-  \item[Leadership] \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
-  \item[Android] \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
-  \item[Kotlin] \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
-  \item[Java] \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
-  \item[JetpackCompose] \hfill \filleddot \filleddot \emptydot \emptydot \emptydot
-  \item[AWS] \hfill \filleddot \filleddot \emptydot \emptydot \emptydot
-  \item[Python] \hfill \filleddot \filleddot \emptydot \emptydot \emptydot
-\end{description}
+\textbf{Mentoring} \hfill \filleddot \filleddot \filleddot \filleddot \emptydot
+\textbf{Agile} \hfill \filleddot \filleddot \filleddot \filleddot \filleddot
+\textbf{Leadership} \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
+\textbf{Android} \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
+\textbf{Kotlin} \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
+\textbf{Java} \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
+\textbf{JetpackCompose} \hfill \filleddot \filleddot \emptydot \emptydot \emptydot
+\textbf{AWS} \hfill \filleddot \filleddot \emptydot \emptydot \emptydot
+\textbf{Python} \hfill \filleddot \filleddot \emptydot \emptydot \emptydot
 \end{aside}
 %----------------------------------------------------------------------------------------
 %	SUMMARY SECTION
 %----------------------------------------------------------------------------------------
 
 \section{summary}
-Over 6 years of total experience, including Android development with
-Kotlin and Java since January 2022. I have worked on building
-Android applications using MVVM, Clean Architecture, and Jetpack
-Compose. Previously, I worked as a backend engineer using Python
-and Java, gaining a strong foundation in scalable systems and API
-development.
+\vspace{1em}
+\\
+6+ years of experience building scalable, high-impact applications across Android and backend systems. I’ve developed Android apps using Kotlin, Java, Jetpack Compose, MVVM, and Clean Architecture, while also contributing as a backend engineer using Python and Java to design robust APIs and services. I take pride in delivering reliable solutions that improve user experience and system performance, and I’m equally passionate about mentoring teammates and helping them grow.
+\vspace{0.5em}
 %------------------------------------------------
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\section{education}
-
-\begin{entrylist}
-
-%------------------------------------------------
-
-\entry
-{2014--2018}
-{Engineer’s Degree {\normalfont Systems Engineering}}
-{Universidad Tecnológica Nacional, Argentina}
-{Graduated with a focus on Object Oriented Programming (OOP) and project management.}
-
-%------------------------------------------------
-\end{entrylist}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -132,15 +107,14 @@ development.
 {Eyeo - Android Software Engineer}
 {Germany · Remote}
 {
-• Played a key role in the further development of Samsung Content Blockers, enhancing browsing experiences forusers on the PlayStore.
+• Led key initiatives in the development of Samsung Content Blockers, resulting in a smoother and more privacy-focused browsing experience for millions of users via the Play Store.
 \\
-• Led development efforts and made significant contributions to the
-development of Adblock Browser, elevatingadvertisement filtering capabilities and privacy features for Android users.
+• Took ownership of major features in Adblock Browser, driving improvements in ad filtering and privacy protections, and helping grow the app’s active user base.
 \\
-• Mentorship for Junior Android Dev working in the team.
+• Acted as mentor to a Junior Android Developer, providing code reviews, architectural guidance, and onboarding support.
 }
 {
-  Architectural Patterns · Kotlin · Java · Jetpack compose · Kotlin Coroutines · Model-view-viewmodel (MVVM) · Hilt
+  Architectural Patterns · Kotlin · Java · Jetpack Compose · Kotlin Coroutines · Model-View-ViewModel (MVVM) · Hilt
 }
 
 %------------------------------------------------
@@ -166,10 +140,16 @@ development of Adblock Browser, elevatingadvertisement filtering capabilities an
 \entryexperience
 {Aug 2018}
 {Aug 2019}
-{Eventbrite - Software Engineer}
+{Eventbrite - Python Software Engineer}
 {Provincia de Mendoza, Argentina}
 {
-  In my role as a Junior Software Engineer at Eventbrite, I gained valuable experience in python/django API development, SQL Databases, and working in an agile environment. I contributed to enhancing user experience and functionality through the development of APIs and optimized data storage processes. Additionally, I collaborated with cross-functional teams to ensure timely project delivery.
+  • Developed and maintained scalable APIs using Python and Django, improving system performance and user experience.
+
+  • Worked with SQL databases to optimize data storage and retrieval processes.
+
+  • Collaborated with cross-functional teams (product, design, QA) to deliver features in an agile, sprint-based environment.
+
+  • Contributed to enhancing platform functionality by identifying and implementing backend improvements.
 }
 {
   Architectural Patterns · Python · Django · Unit Testing · Agile Methodologies · SQL
@@ -180,9 +160,53 @@ development of Adblock Browser, elevatingadvertisement filtering capabilities an
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2014--2018}
+{Engineer’s Degree {\normalfont Systems Engineering}}
+{Universidad Tecnológica Nacional, Argentina}
+{Graduated with a focus on Object Oriented Programming (OOP) and project management.}
+
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 
+\section{projects}
+\begin{entrylist}
+\entryproject
+{Nov 2022}
+{May 2024}
+{Adblock Browser}
+{eyeo GmbH}
+{
+  The Adblock Browser project focuses on delivering a fast, privacy-centric web
+  browsing experience by integrating advanced ad-filtering technologies to eliminate
+  unwanted content and enhance user security.
+}
+{https://play.google.com/store/apps/details?id=org.adblockplus.browser&pli=1}
+
+\entryproject
+{Jan 2022}
+{Nov 2022}
+{Content Blockers for Samsung Internet}
+{eyeo GmbH}
+{
+  Content Blockers for Samsung Internet leverage their trusted Adblock Plus engine to give users a fast, private, and clean browsing experience. They integrate seamlessly with Samsung’s browser via official extension API, offer customizable filtering, and support sustainable web models through Acceptable Ads.
+}
+{https://play.google.com/store/apps/details?id=org.adblockplus.adblockplussbrowser}
+
+\end{entrylist} 
 \section{interests}
 
 \textbf{professional:} Android development, Clean Architecture, Kotlin Multiplatform, Jetpack Compose, modular app design, RESTful API integration, dependency injection, scalable architecture, backend development (Java/Kotlin), testing and automation, SDK integration \\
