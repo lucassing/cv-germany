@@ -239,7 +239,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{1.2\baselineskip}{\Large\headingfont\color{headercolor} ##1}\vspace{0.5\baselineskip}
   }
-  \begin{textblock}{3.6}(1, 4.35)
+  \begin{textblock}{4}(1, 4.35)
   \begin{flushright}
   \obeycr
   \small
@@ -438,6 +438,11 @@
 % Add vk logo
 \newcommand*{\vklogo}{%
   \textcolor{vkblue}{\includegraphics[height=1em]{resources/vk_logo}}%
+}
+
+% Add web logo
+\newcommand*{\weblogo}{%
+  \textcolor{lblue}{\includegraphics[height=1em]{resources/web_logo}}%
 }
 
 % A fix for \href{}{} colors not working with fontspec
