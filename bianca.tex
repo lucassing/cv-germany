@@ -31,6 +31,16 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\newcommand{\entrypersonal}[3]{%
+  \parbox[t]{2cm}{}&\parbox[t]{11.6cm}{%
+    \textbf{#1}\\%
+    {\vspace{0.5em}}%
+    {\small\addfontfeature{Color=lightgray}\textit{#2}}\\%
+    #3\vspace{\parsep}%
+  }\\[0.25em]%
+}
+
 \begin{document}
 
 \header{Bianca Eugenia }{Sozzi}{Android Software Engineer} % Your name and current job title/field
@@ -56,10 +66,9 @@ Germany\vspace{0.5em}
 \textbf{Mentoring} \hfill \filleddot \filleddot \filleddot \filleddot \emptydot
 \textbf{Agile} \hfill \filleddot \filleddot \filleddot \filleddot \filleddot
 \textbf{Leadership} \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
-\textbf{Android} \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
-\textbf{Kotlin} \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
-\textbf{Java} \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
-\textbf{JetpackCompose} \hfill \filleddot \filleddot \emptydot \emptydot \emptydot
+\textbf{Android} \hfill \filleddot \filleddot \filleddot \filleddot \emptydot
+\textbf{Kotlin} \hfill \filleddot \filleddot \filleddot \filleddot \emptydot
+\textbf{JetpackCompose} \hfill \filleddot \filleddot \filleddot \emptydot \emptydot
 \textbf{AWS} \hfill \filleddot \filleddot \emptydot \emptydot \emptydot
 \textbf{Python} \hfill \filleddot \filleddot \emptydot \emptydot \emptydot
 \end{aside}
@@ -70,7 +79,7 @@ Germany\vspace{0.5em}
 \section{summary}
 \vspace{1em}
 \\
-7+ years of experience building scalable, high-impact applications across Android and backend systems.
+8 years of experience building scalable, high-impact applications across Android and backend systems.
 In my current role, I operate at the intersection of engineering and product, driving technical decisions, shaping product requirements, and aligning cross-functional teams to deliver user-centric solutions.
 \vspace{0.5em}
 %------------------------------------------------
@@ -80,8 +89,6 @@ In my current role, I operate at the intersection of engineering and product, dr
 %----------------------------------------------------------------------------------------
 
 \section{experience}
-
-\subsection{Full Time}
 
 \begin{entrylist}
 
@@ -201,6 +208,8 @@ In my current role, I operate at the intersection of engineering and product, dr
 %------------------------------------------------
 \end{entrylist}
 
+\newpage
+
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
@@ -251,9 +260,36 @@ In my current role, I operate at the intersection of engineering and product, dr
 {https://play.google.com/store/apps/details?id=org.adblockplus.adblockplussbrowser}
 
 \end{entrylist} 
+
+\subsection{Personal Projects}
+
+\begin{entrylist}
+
+\entrypersonal
+{Mordisco — Restaurant Discovery App}
+{Personal Project}
+{
+  A mobile app for discovering and exploring restaurants, built as a personal Android project. Developed with Android Native, Kotlin and Jetpack Compose.
+}
+
+\entrypersonal
+{IvyBrowser — Android Web Browser}
+{Personal Project}
+{
+  A native Android browser built to explore modern browser architecture, WebView integration, navigation and JavaScript communication. Developed with Android Native, Kotlin and Jetpack Compose.
+}
+
+\entrypersonal
+{Study Buddy — Learning App POC}
+{Personal Project}
+{
+  A mobile learning app developed as a proof of concept using React Native, with AI tools supporting the development process.
+}
+
+\end{entrylist} 
 \section{interests}
 
-\textbf{professional:} Android development, Clean Architecture, Kotlin Multiplatform, Jetpack Compose, modular app design, RESTful API integration, dependency injection, scalable architecture, backend development (Java/Kotlin), testing and automation, SDK integration \\
-\textbf{personal:} traveling, remote work, problem-solving, exploring new cultures, parenting (BLW), TV Series, Music, Reading
+\textbf{professional:} Android development, mobile architecture, Kotlin Multiplatform, Jetpack Compose, scalable app design, developer tools \& AI-assisted development \\
+\textbf{personal:} traveling, cooking, music, reading, TV series, exploring new cultures
  
 \end{document}
